@@ -1,0 +1,17 @@
+version: "3.9"
+networks:
+  development:
+    external: true
+services:
+  revo-framework:
+    container_name: revo-framework
+    ports:
+      - 5000:5000
+    volumes:
+      - ../:/workspace:cached
+    build:  
+      context: ../
+      dockerfile: ./.devcontainer/dockerfile
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    networks:
+      - development

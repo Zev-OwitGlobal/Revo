@@ -1,0 +1,21 @@
+{
+  "name": "Revo Framework",
+  "service": "revo-framework",
+  "forwardPorts": [8050],
+  "dockerComposeFile": ["./docker-compose.yml"],
+  "settings": {},
+  "extensions": [
+    "ms-dotnettools.csharp",
+    "streetsidesoftware.code-spell-checker",    
+    "k--kato.docomment",
+    "editorconfig.editorconfig",
+    "heaths.vscode-guid",
+    "jchannon.csharpextensions",
+    "aaron-bond.better-comments",
+    "kiteco.kite",
+    "esbenp.prettier-vscode"
+    ],
+  "workspaceFolder": "/workspace",
+  "remoteUser": "vscode",
+  "shutdownAction": "none"
+}
